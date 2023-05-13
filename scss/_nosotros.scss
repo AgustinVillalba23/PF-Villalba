@@ -1,0 +1,151 @@
+[class$="__contenedor"] {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+[class$="__heading"] {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.barrio-seguro__heading{
+    background-color:var(--primary-color);
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: var(--sidebar-color);
+}
+
+.barrio-seguro {
+    margin-top: 3rem;
+}
+
+.barrio-seguro__grid {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.img-bs{
+    width: 300px;
+    margin-left: 50px;
+}
+
+@media (min-width: 768px) {
+    .barrio-seguro__grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 5rem;
+        align-items: center;
+    }
+}
+
+.listado__elemento {
+    background-color: var(--sidebar-color);
+    box-shadow: 0px 0px 15px 3px  rgb(0 0 0 / .15);
+    margin-bottom: 5rem;
+    padding: 2rem;
+    transition-property: transform;
+    transition-duration: 300ms;
+    margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+    .listado__elemento--2columnas {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.listado__heading {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.listado__numero {
+    font-size: 6rem;
+    margin: 0;
+    font-weight: 900;
+    color: var(--primario);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .listado__numero {
+        flex-basis: 20rem;
+        text-align: right;
+        font-size: 4rem;
+    }
+}
+
+.listado__texto {
+    margin: 0;
+}
+
+.listado__elemento:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Seccion Seguridad */
+
+.seguridad {
+    position: relative;
+    padding: 10rem 0;
+    background-color: var(--primary-color);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+
+.seguridad__heading {
+    color: var(--sidebar-color);
+    background-color:var(--primary-color);
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: var(--sidebar-color);
+
+}
+
+@media (min-width: 768px) {
+    .seguridad__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        justify-items: end;
+        align-items: center;
+    }
+}
+
+/* Seccion Comisiones */
+
+@media (min-width: 768px) {
+    .soporte__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: flex-end;
+    }    
+}
+
+@media (min-width: 998px) {
+    .soporte__grid {
+        align-items: center;
+    }
+}
+
+.soporte__texto {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .soporte__texto {
+        text-align: left;
+    }
+}

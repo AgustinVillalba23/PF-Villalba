@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <meta name="description" content="Es un sitio web es de Barrio Seguro, una aplicación móvil que te permite alertar y reportar situaciones de peligro en tiempo real a las autoridades y a otros usuarios cercanos.">
+
+    <meta name="keywords" content="Barrio-Seguro, ubicación,seguridad">
+
+    <title>Barrio-Seguro/Inicio</title> 
+</head>
+<body>
+
+</head>
+<body>
+
+    <div class="bottom-navigation">
+        <a href="#">
+            <i class='bx bx-home-alt icon'></i>
+        </a>
+        <a href="/pages/perfil.html">
+            <i class='bx bx-user icon'></i>
+        </a>
+    <a href="#" id="action-button" class="action-button">
+            <img id="#" class="image-botton" src="img/icono.png" alt="Diseño del logo de Barrio Seguro">
+    </a>
+    <a href="pages/estadisticas.html">
+        <i class='bx bx-bar-chart-alt-2 icon' ></i>
+    </a>
+    <a href="/pages/registrar.html">
+        <i class='bx bx-log-out icon' ></i>
+    </a>
+    <div id="overlay">
+		<div id="popup">
+			<div id="popup-message"></div>
+			<button id="close-button">Cerrar</button>
+		</div>
+	</div>
+    </div> 
+    
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img id="#" src="img/icono.png" alt="Diseño del logo de Barrio Seguro">
+                </span>
+                <div class="text logo-text">
+                    <span class="name">Barrio</span>
+                    <span class="profession">Seguro</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="pages/estadisticas.html">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Estadisticas</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="pages/cercanos.html">
+                            <i class='bx bxs-user-voice icon'></i>
+                            <span class="text nav-text">Cercanos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/pages/perfil.html">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Perfil</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/pages/nosotros.html">
+                            <i class='bx bx-buildings icon'></i>
+                            <span class="text nav-text">Nosotros</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="">
+                    <a href="/pages/registrar.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Salir</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="text"><h1>Esto ocurrio en tu zona</h1></div>
+
+        <main class="contenedor__main">
+            <div class="container__cards">
+                <div class="card">
+                    <div class="cover__card">
+                        <img src="img/imagen1.jpg" alt="Robo">
+                    </div>
+                    <h2>Robo a plena luz del día</h2>
+                    <p>Un camionero de 45 años fue víctima de un robo en la ruta nacional 9, cerca de la ciudad de Córdoba. Mientras se detenía en un área de descanso, dos delincuentes armados lo abordaron y lo obligaron a entregarles el dinero en efectivo que llevaba consigo. Los ladrones huyeron en un vehículo y la víctima reportó el incidente a la policía. Las autoridades están llevando a cabo una investigación para dar con el paradero de los delincuentes.</p>
+                    <hr>
+                    <div class="footer__card">
+                        <h3 class="user__name">Lucas Gutierrez</h3>
+                        <i>15 km de tu ubicación</i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover__card">
+                        <img src="img/imagen2.jpg" alt="Accidente">
+                    </div>
+                    <h2>Accidente en la calle</h2>
+                    <p>Un automóvil chocó contra un poste de luz en la esquina de Avenida Principal y Calle 12. El conductor, de 35 años, resultó herido y fue llevado al hospital más cercano. Los trabajadores de la compañía eléctrica están trabajando para reparar el poste y restaurar la energía en la zona.</p>
+                    <hr>
+                    <div class="footer__card">
+                        <h3 class="user__name">Enzo Roljeir</h3>
+                        <i>8 km de tu ubicación</i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover__card">
+                        <img src="img/imagen3.jpg" alt="Estafa">
+                    </div>
+                    <h2>Estafa inmobiliaria</h2>
+                    <p>Una pareja denunció haber sido estafada por una empresa de inmuebles que les vendió una casa en mal estado y con problemas estructurales. Los afectados han contratado a un abogado y están buscando recuperar su dinero a través de los tribunales.</p>
+                    <hr>
+                    <div class="footer__card">
+                        <h3 class="user__name">Rodrigo Melian</h3>
+                        <i>2 km de tu ubicación</i>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+                <div class="container__footer">
+                    <div class="box__footer">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="Logo de Barrio Seguro">
+                        </div>
+                    </div>
+
+                <div class="box__copyright">
+                    <hr>
+                    <p>Todos los derechos reservados © 2022 <b>Agustin Villalba</b></p>
+                </div>
+            </footer>
+    
+    </section> 
+
+    <script>
+        const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+        toggle.addEventListener("click" , () =>{
+        sidebar.classList.toggle("close");
+        })
+        searchBtn.addEventListener("click" , () =>{
+        sidebar.classList.remove("close");
+        })
+        modeSwitch.addEventListener("click" , () =>{
+        body.classList.toggle("dark");
+    
+        if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+        }else{
+        modeText.innerText = "Dark mode";
+        
+        }
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

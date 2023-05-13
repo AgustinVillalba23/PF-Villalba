@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Barrio-Seguro/directo</title>
+</head>
+<body>
+
+    <div class="bottom-navigation">
+        <a href="#">
+            <i class='bx bx-home-alt icon'></i>
+        </a>
+        <a href="/pages/perfil.html">
+            <i class='bx bx-user icon'></i>
+        </a>
+    <a href="#" id="action-button" class="action-button">
+            <img id="#" class="image-botton" src="/img/icono.png" alt="Diseño del logo de Barrio Seguro">
+    </a>
+    <a href="pages/estadisticas.html">
+        <i class='bx bx-bar-chart-alt-2 icon' ></i>
+    </a>
+    <a href="/pages/registrar.html">
+        <i class='bx bx-log-out icon' ></i>
+    </a>
+    <div id="overlay">
+		<div id="popup">
+			<div id="popup-message"></div>
+			<button id="close-button">Cerrar</button>
+		</div>
+	</div>
+    </div>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img id="#" src="/img/icono.png" alt="Diseño del logo de Barrio Seguro">
+                </span>
+                <div class="text logo-text">
+                    <span class="name">Barrio</span>
+                    <span class="profession">Seguro</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/pages/estadisticas.html">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Estadisticas</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/pages/cercanos.html">
+                            <i class='bx bxs-user-voice icon'></i>
+                            <span class="text nav-text">Cercanos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/pages/perfil.html">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Perfil</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/pages/nosotros.html">
+                            <i class='bx bx-buildings icon'></i>
+                            <span class="text nav-text">Nosotros</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="">
+                    <a href="/pages/registrar.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Salir</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="text"><h1>Tu Perfil</h1></div>
+
+        <main class="perfil">
+
+        </main>
+
+        <footer>
+                <div class="container__footer">
+                    <div class="box__footer">
+                        <div class="logo">
+                            <img src="/img/logo.png" alt="Logo de Barrio-Seguro">
+                        </div>
+                    </div>
+        
+                <div class="box__copyright">
+                    <hr>
+                    <p>Todos los derechos reservados © 2022 <b>Agustin Villalba</b></p>
+                </div>
+            </footer>
+    
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+        toggle.addEventListener("click" , () =>{
+        sidebar.classList.toggle("close");
+        })
+        searchBtn.addEventListener("click" , () =>{
+        sidebar.classList.remove("close");
+        })
+        modeSwitch.addEventListener("click" , () =>{
+        body.classList.toggle("dark");
+    
+        if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+        }else{
+        modeText.innerText = "Dark mode";
+        
+        }
+        });
+    </script>
+</body>
+</html>
